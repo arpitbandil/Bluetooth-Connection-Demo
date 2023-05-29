@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.arpitbandil.demo.blutoothchat.module.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/search_action"
+            app:destination="@+id/searchDevicesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchDevicesFragment"
+        android:name="com.arpitbandil.demo.blutoothchat.module.bluetooth.SearchDevicesFragment"
+        android:label="fragment_search_devices_list"
+        tools:layout="@layout/fragment_search_devices_list" >
+        <action
+            android:id="@+id/terminal_chat"
+            app:destination="@id/terminalChatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/terminalChatFragment"
+        android:name="com.arpitbandil.demo.blutoothchat.module.bluetooth.spp.TerminalChatFragment"
+        android:label="TerminalChatFragment"
+        tools:layout="@layout/fragment_terminal_chat" >
+        <argument
+            android:name="device_address"
+            app:argType="string" />
+    </fragment>
+</navigation>

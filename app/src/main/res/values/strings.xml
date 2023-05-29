@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bluetooth Chat Demo</string>
+    <string name="welcome">Welcome!</string>
+    <string name="search_devices">Search BT Devices</string>
+    <string name="search_ble_devices">Search BLE Devices</string>
+    <string name="available_devices">Available Devices</string>
+    <string name="bluetooth_not_supported">Bluetooth classic not supported!</string>
+    <string name="ble_not_supported">Bluetooth LE not suppported!</string>
+    <string name="need_permission_to_proceed">Need Bluetooth Permission to proceed</string>
+    <string name="open_bluetooth">Enable Bluetooth to proceed</string>
+    <string name="paired_devices">Paired Devices</string>
+    <string name="connect_with_spp">Connect with SPP</string>
+    <string name="connect">Connect For Chat</string>
+    <string name="send_text">Send Message</string>
+    <string name="no_devices_found">No Devices Found</string>
+</resources>
